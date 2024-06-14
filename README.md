@@ -1,6 +1,6 @@
 # 项目初始化
 
-- 技术选型：uni-app + vue3 + vite + pinia + javascript + uni-ui + scss
+- 技术选型：uni-app + vue3 + vite  + es6 + uni-ui + scss
 
 - 编辑器：vscode  
 - 插件：
@@ -18,14 +18,15 @@
 # 文件目录
 
     src
-        pages
-        components
-        composables
-        service
-        store
-        utils
-        styles
-        static
+        pages       --页面
+        subpages    --分包页面
+        components  --公共组件
+        composables --hooks函数
+        api         --网络请求   
+        store       --状态管理
+        utils       --工具函数
+        styles      --公共样式，字体图标
+        static      --静态资源
 
 # 注意
 
@@ -37,7 +38,7 @@
 - 2. 在 pages 下新建页面，打包输出的微信小程序包路径不对 (pages.json路由配置路径有问题)
 - 3. uni-app 提供的生命周期函数在微信中运行没有效果 (vite中配置代码压缩导致,注意vue3的语法)
 
-# 明日计划
+# 内容
 
 - 1. 封装请求
 - 2. 自定义封装组件，自动导入
